@@ -11,3 +11,16 @@ const person = {
 };
 
 person.greet();
+
+// Object destructuring ==> specifying what we just need from that object
+// pull them out using key name
+
+const printName = ({ name, age }) => {
+  console.log(name, age);
+};
+
+printName(person);
+
+// In a similar way this can be applied to do array destructuring as well
+const { name, age } = person;
+console.log("Another way " + name + " " + age);
