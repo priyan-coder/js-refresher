@@ -6,6 +6,10 @@
 
 // By adding a new element or changing stuff within this array we dont violate the const
 // Because arrays / objects are reference types and the changes that we do ==> dont change the address held by the pointer hobbies
+
+// Unpacking an object or an aray ==> spread operator
+// mergin up the arguments into an array ==> rest operator
+
 const hobbies = ["Sports", "Cooking"];
 
 // looping through
@@ -14,3 +18,15 @@ for (let hobby of hobbies) {
 }
 hobbies.push("Programming");
 console.log(hobbies);
+
+const copiedArray = [...hobbies];
+copiedArray.push("excercise");
+
+console.log(copiedArray);
+console.log(hobbies);
+
+const getTheArgs = (...args) => {
+  return args;
+};
+
+console.log(getTheArgs(1, 2, 55, 8));
