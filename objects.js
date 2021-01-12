@@ -1,5 +1,6 @@
 // this refers to the object
 // to access the methods, variables in the object
+// key pair values
 
 const person = {
   name: " max",
